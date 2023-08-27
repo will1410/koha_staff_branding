@@ -592,6 +592,12 @@
         color: var(--c_medium);
       }
 
+/* System preferences message text pop-up (admin/preferences.pl) */
+    .humanMsg p,
+    #humanMsgLog p {
+      color: var(--t_medium);
+    }
+
 /* Less well documented changes - kind of misc and odds and ends - better documentation coming soon */
 
   /* Not 100% sure */
