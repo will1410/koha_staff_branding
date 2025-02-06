@@ -4,9 +4,9 @@ Custom CSS to modify colors in the Koha staff client to match your brand colors
 
 This css can be added to the IntranetUserCSS system preference in Koha to modify the colors in your Koha staff client.
 
-I consider this a work-in-progress that's probably 98% complete.  I'm aware that there may be parts of Koha that I've missed, but I think this is pretty thourough so far.  If you find any places in Koha where you think the colors ought to be changed by this css but aren't being changed, please submit an issue here on Github and I'll try to incorporate any changes needed.
+Updated on 2025-02-06 to account for changes in Koha 24.11
 
-The color variables in this file are based on the colors we use at my library and are as follow:
+The color variables in this file are based on the colors we use at Next Search Catalog and are as follow:
 
 | Color | variable name | Color ID |
 |-----|-----|-----|
@@ -30,12 +30,10 @@ The color variables in this file are based on the colors we use at my library an
 | header text | `--t_head` | #000000 |
 | header hover color | `--c_head_hov` | #e0e0e0 |
 | header hover text | `--t_head_hov` | #000000 |
-|-----|-----|-----|
-| test color | `--testt` | black |
-| test text | `--testc` | red |
 
-To set the colors for your library, find the section labeled "root" in the css file, then replace my hexidecimal color codes with your own.
+I used [A11Y - Color blindness empathy test](https://addons.mozilla.org/en-US/firefox/addon/a11y-color-blindness-test/) and [Venngage's Accessible Color Palette Generator](https://venngage.com/tools/accessible-color-palette-generator) to take the colors from our logo and create a palatte that would look good with our logo and be accessible for people that might have vision issues.
 
+To set different colors for your library, find the section labeled "root" in the css file, then replace my hexidecimal color codes with your own.
 
 ```css
 
@@ -73,13 +71,8 @@ To set the colors for your library, find the section labeled "root" in the css f
     --t_head_hov: #000000;
 
     /* Text colors */
-
     --general_text: #000000;
     --general_link: #04368e;
-
-    /* test colors */
-    --testt: red;
-    --textcolor: black;
 
   }
 
